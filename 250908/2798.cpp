@@ -40,9 +40,9 @@ int main()
             }
         }
         if (sum > best && sum <= M)
-            {
-                best = sum;
-            }
+        {
+            best = sum;
+        }
     } while (prev_permutation(pick.begin(), pick.end()));
 
     cout << best << "\n";
