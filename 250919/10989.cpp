@@ -1,6 +1,4 @@
 #include <iostream>
-#include <algorithm>
-#include <vector>
 
 using namespace std;
 
@@ -18,7 +16,7 @@ int main()
     {
         int x;
         cin >> x;
-        count[x];
+        ++count[x];
     }
 
     for (int v = 1; v <= 10000; v++)
