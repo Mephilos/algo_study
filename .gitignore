@@ -1,6 +1,6 @@
 
 # build
-build
+build/
 
 # macOS
 .DS_Store
