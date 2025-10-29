@@ -26,7 +26,7 @@ int main()
         {
             int startW = 0;
             int startB = 0;
-            int wbMin = 0;
+            
             for (int k = i; k < i + 8 ; k++)
             {
                 for (int r = j; r < j + 8 ;r ++)
