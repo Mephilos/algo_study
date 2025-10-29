@@ -4,6 +4,7 @@ build/
 
 #IDE cache
 .vscode/
+**/*.dSYM/
 
 # macOS
 .DS_Store
