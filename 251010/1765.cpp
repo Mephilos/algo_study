@@ -8,11 +8,10 @@ using namespace std;
 
 int main()
 {
-    int N,M;
+    int N, M;
 
     cin >> N >> M;
     unordered_set<string> human;
-    
 
     for (int i = 0; i < N; i++)
     {
@@ -35,7 +34,7 @@ int main()
     }
 
     sort(result.begin(), result.end());
-    
+
     cout << result.size() << '\n';
     for (auto name : result)
     {
