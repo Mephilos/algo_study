@@ -1,0 +1,51 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+vector<int> input;
+vector<int> path;
+
+int N, M;
+
+void Solve(int cnt)
+{
+    if (cnt == M)
+    {
+        for (auto i : path)
+        {
+            cout << i << ' ';
+        }
+        cout << '\n';
+        return;
+    }
+
+    for (int i = 1; i <= N; i++)
+    {
+        path.push_back(input[i]);
+
+        Solve(cnt + 1);
+
+        path.pop_back();
+    }
+}
+
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cin >> N >> M;
+
+    input.clear();
+    input.resize(N + 1);
+
+    for (int i = 1; i <= N; i++)
+    {
+        cin >> input[i];
+    }
+
+    sort(input.begin(), input.end());
+
+    Solve(0);
+}
