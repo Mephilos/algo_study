@@ -24,7 +24,7 @@ void Solve(int cnt, int start)
     for (int i = start; i <= N; i++)
     {
         path.push_back(input[i]);
-
+        cout << "+++" << i << "+++" << '\n';
         Solve(cnt + 1, i);
 
         path.pop_back();
