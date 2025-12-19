@@ -65,9 +65,10 @@ int main()
     {
         if (dist[i] == INF)
         {
-            cout << "INF" << '\n';
+            cout << "INF" << endl;
         }
+
         else
-            cout << dist[i] << '\n';
+            cout << dist[i] << endl;
     }
 }
